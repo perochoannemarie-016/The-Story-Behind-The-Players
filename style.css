@@ -1,0 +1,154 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #dff0d0;
+    color: #26351f;
+}
+
+/* Header */
+header {
+    background-color: #4f8a3a;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 8px solid #6b4526;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: #6b4526;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #ffffff;
+    margin-bottom: 25px;
+    padding: 25px;
+    border: 3px solid #7a5a35;
+    border-radius: 8px;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #3f702e;
+}
+
+/* Welcome section */
+.welcome {
+    text-align: center;
+}
+
+/* Profile cards - this is our Flexbox section */
+.profiles {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.profile-card {
+    flex: 1;
+    max-width: 350px;
+    padding: 25px;
+    background-color: #f5ead8;
+    border: 4px solid #7a5a35;
+    border-radius: 8px;
+    text-align: center;
+    color: #26351f;
+    text-decoration: none;
+}
+
+.profile-card:hover {
+    background-color: #e8f2dc;
+}
+
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    image-rendering: pixelated;
+}
+
+/* Profile pages */
+.profile-image {
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin: 0 auto 20px;
+    image-rendering: pixelated;
+}
+
+.two-column {
+    display: flex;
+    gap: 30px;
+}
+
+.two-column > div {
+    flex: 1;
+    background-color: #f5ead8;
+    padding: 15px;
+    border: 2px solid #c4a777;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #356d2b;
+}
+
+/* Footer */
+footer {
+    background-color: #6b4526;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: white;
+}
+
+/* Makes the layout easier to use on smaller screens */
+@media (max-width: 650px) {
+    .profiles,
+    .two-column {
+        flex-direction: column;
+    }
+
+    .profile-card {
+        max-width: none;
+    }
+}
